@@ -1,0 +1,109 @@
+
+.App {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fb;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.App-header {
+  background-color: #2f3c7e;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Title of the app */
+.title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Subtitle for the header */
+.subtitle {
+  font-size: 1.2em;
+  color: #f0f4f7;
+  margin-top: 0;
+}
+
+/* Attendance list styles */
+.attendance {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Heading for attendance section */
+.attendance h2 {
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  color: #2f3c7e;
+}
+
+/* Unordered list for attendance records */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* List item styles for each record */
+li {
+  font-size: 1.1em;
+  padding: 8px;
+  background-color: #f7f9fc;
+  margin: 5px 0;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Alternate row color for the attendance list */
+li:nth-child(even) {
+  background-color: #ebf0ff;
+}
+
+/* Hover effect for list items */
+li:hover {
+  background-color: #e0e8f9;
+  cursor: pointer;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  .App-header {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .attendance {
+    padding: 15px;
+  }
+
+  .attendance h2 {
+    font-size: 1.5em;
+  }
+
+  li {
+    font-size: 1em;
+  }
+}

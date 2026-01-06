@@ -1,0 +1,35 @@
+{
+  "name": "mern-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "seed:departments": "node src/seedDepartments.mjs",
+    "seed:users": "node src/seedUsers.mjs",
+    "seed:courses": "node src/seedCourses.mjs",
+    "seed:lectures": "node src/seedLectures.mjs",
+    "seed:enrollments": "node src/seedEnrollments.mjs",
+    "seed:calendar": "node src/seedCalendarEvents.mjs",
+    "seed:resources": "node src/seedResources.mjs",
+    "seed:resourceRatings": "node src/seedResourceRatings.mjs",
+    "seed:messages": "node src/seedMessages.mjs",
+    "seed:audit": "node src/seedAuditLogs.mjs",
+    "seed": "npm run seed:departments && npm run seed:users && npm run seed:courses && npm run seed:lectures && npm run seed:enrollments && npm run seed:calendar && npm run seed:resources && npm run seed:messages"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
